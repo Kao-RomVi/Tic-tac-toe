@@ -1,0 +1,69 @@
+* {
+   padding: 0%;
+   margin: 0%; 
+   box-sizing: border-box;
+}
+
+.contenedor{
+    background-image: url('https://i.pinimg.com/736x/98/95/12/9895122c43fbe9a902568619845f3a70.jpg');
+    background-size: contain;
+    height: 100vh;
+    display: flex; /* Manera en la que vamos a ordenar las cosas*/
+    flex-direction: column;
+    padding: 20px;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.cuadro {
+    width: 600px;
+    height: 600px;
+    display: grid; /* Da un espacio entre cada contenedor */
+    grid-template-columns: 1fr 1fr 1fr; /* Calcula el espaciado y el resultado lo divide entre tres */
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+    background-color: black;
+}
+
+.cuadro div {
+    background-color: lightpink;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+    font-family: fantasy;
+}
+
+.cuadro div:hover {
+    background-color: rgba(250, 144, 206, 0.726);
+    cursor: pointer;
+}
+
+button {
+    padding: 20px 10px;
+    background-color: bisque;
+    border: 0px;
+    border-radius: 8px;
+    width: 200px;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(238, 108, 180);
+}
+
+.lineContainer {
+    position: relative;
+}
+
+#linea {
+    position: absolute;
+    display: block;
+    background-color: mediumpurple;
+}
